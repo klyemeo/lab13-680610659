@@ -42,11 +42,12 @@ function App() {
     <div className="col-12 m-2 p-0">
       <div className="container text-center">
         <h2>Todo List</h2>
-        <span className="badge rounded bg-secondary px-3 py-2 fs-6 fw-normal me-3 mb-3">
-          All : {(tasks.length)}</span> 
-          <span className="badge rounded bg-success px-3 py-2 fs-6 fw-normal mb-3"> 
-            Done : {tasks.filter((t) => (t.isDone === true)).length}
-          </span>
+<span className="badge bg-secondary px-4 py-2 fs-6 fw-normal me-3 mb-3 cursor-pointer transition-all duration-500 ease-in-out rounded-pill hover:!rounded-[70%_30%_30%_70%/60%_40%_60%_40%] hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-500/50 active:scale-95">
+  All : {tasks.length}
+</span> 
+<span className="badge bg-success px-4 py-2 fs-6 fw-normal mb-3 cursor-pointer transition-all duration-500 ease-in-out rounded-pill hover:!rounded-[30%_70%_70%_30%/30%_30%_70%_70%] hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-green-500/50 active:scale-95"> 
+  Done : {tasks.filter((t) => t.isDone === true).length}
+</span>
 
         <div>
           <button
